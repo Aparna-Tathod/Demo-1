@@ -39,15 +39,10 @@
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>jacoco.version</version>
         <id>jacoco-initialize</id>
-        <goals>
-           <goal>prepare-agent</goal>
-        </goals>
-        <id>jacoco-site</id>
+        <goal>prepare-agent</goal>
         <phase>package</phase>
-        <goals>
-          <goal>report</goal>
-        </goals>
-               
+        <goal>report</goal>
+                  
       </plugin>  
     </plugins>
   </build>
