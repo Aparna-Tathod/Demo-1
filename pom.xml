@@ -34,25 +34,20 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
       </plugin>
-
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>jacoco.version</version>
-        <execution>
-            <id>jacoco-initialize</id>
-            <goals>
-                <goal>prepare-agent</goal>
-            </goals>
-        </execution>
-        <execution>
-           <id>jacoco-site</id>
-           <phase>package</phase>
-           <goals>
-               <goal>report</goal>
-           </goals>
-        </execution>
-        
+        <id>jacoco-initialize</id>
+        <goals>
+           <goal>prepare-agent</goal>
+        </goals>
+        <id>jacoco-site</id>
+        <phase>package</phase>
+        <goals>
+          <goal>report</goal>
+        </goals>
+               
       </plugin>  
     </plugins>
   </build>
